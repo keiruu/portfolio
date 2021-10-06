@@ -1,5 +1,5 @@
 ## Personal Portfolio
 
-A simple one-page portfolio built with Next.js
+A simple one page portfolio built with Next.js
 
 
