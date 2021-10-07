@@ -15,28 +15,43 @@ const menus = [
 
 export default function Nav() {
     return (
-        <motion.div className="relative flex items-center justify-center gap-20 my-10"
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  delay: 4,
-                  type: "spring",
-                  bounce: 0.7,
-                  duration: 2,
-                }}>
-            {menus.map((menu, index) => (
-              <div key={index} className="relative">
-                {menu.name !== "none" ? 
-                  <p className="relative text-pink mt-3 font-medium">{menu.name}</p>
-                : <motion.div
-                    initial={{scale: 1}}
-                    whileHover={{scale: 1.3}}
-                  >
-                    <Image src={logo} alt="AKU Logo" width="50" height="50" />
-                  </motion.div>
-                }
-              </div>
-            ))}
-        </motion.div>
+        <div>
+            <motion.div className="relative hidden md:flex items-center justify-center gap-8 md:gap-20 my-10"
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{
+                    delay: 4,
+                    type: "spring",
+                    bounce: 0.7,
+                    duration: 2,
+                  }}>
+              {menus.map((menu, index) => (
+                <div key={index} className="relative">
+                  {menu.name !== "none" ? 
+                    <p className="cursor-pointer font-raleway relative text-pink mt-3">{menu.name}</p>
+                  : <motion.div
+                      initial={{scale: 1}}
+                      whileHover={{scale: 1.3}}
+                    >
+                      <Image src={logo} alt="AKU Logo" width="50" height="50" />
+                    </motion.div>
+                  }
+                </div>
+              ))}
+          </motion.div>
+      
+          <motion.div className="relative flex md:hidden items-center justify-center gap-8 md:gap-20 my-10"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 4,
+              type: "spring",
+              bounce: 0.7,
+              duration: 2,
+            }}
+          >
+            <Image src={logo} alt="AKU Logo" width="50" height="50" />
+          </motion.div>
+        </div>
     )
 }

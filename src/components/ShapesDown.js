@@ -69,19 +69,21 @@ const shapes = {
 
 export default function ShapesDown() {
     return (
-        <div className="z-0">
-            <motion.div initial="boxInitial" animate="box" variants={shapes} className="absolute bottom-0 right-0">
+        <div >
+            <div className="z-0">
+            <motion.div initial="boxInitial" animate="box" variants={shapes} className="fixed bottom-0 right-0 w-24 md:w-32">
                 <Image src={lightgreen} alt=""/>
             </motion.div>
-            <motion.div initial="rotateInitial" animate="rotate" variants={shapes} className="absolute bottom-0 right-30">
+            <motion.div initial="rotateInitial" animate="rotate" variants={shapes} className="fixed bottom-0 right-24 md:right-30 w-24 md:w-32">
                 <Image src={peach} alt=""/>
             </motion.div>
-            <motion.div initial="rotateInitialTwo" animate="rotateTwo" variants={shapes} className="absolute bottom-30 right-0">
+            <motion.div initial="rotateInitialTwo" animate="rotateTwo" variants={shapes} className="fixed bottom-24 md:bottom-30 right-0 w-24 md:w-32">
                 <Image src={orange} alt=""/>
             </motion.div>
-            <motion.div initial="circleInitial" animate="circle" variants={shapes} className="absolute bottom-30 right-30">
+            <motion.div initial="circleInitial" animate="circle" variants={shapes} className="fixed bottom-24 md:bottom-30 right-24 md:right-30 w-24 md:w-32">
                 <Image src={lightyellow} alt=""/>
             </motion.div>
+            </div>
         </div>
     )
 }
