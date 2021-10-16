@@ -1,3 +1,6 @@
-<svg width="114" height="113" viewBox="0 0 114 113" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M-1.1684e-06 -1L0 113C62.9605 113 114 61.9605 114 -1.00001L-1.1684e-06 -1Z" fill="#D6DCCC"/>
+<svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 114L114 114C114 51.0394 62.9604 -0.000144311 -1.75956e-05 -0.000138807L0 114Z"/>
+</mask>
+<path d="M0 114L-2 114L-2 116L1.74845e-07 116L0 114ZM114 114L114 116L116 116L116 114L114 114ZM-1.75956e-05 -0.000138807L-1.77704e-05 -2.00014L-2.00002 -2.00014L-2.00002 -0.000138632L-1.75956e-05 -0.000138807ZM1.74845e-07 116L114 116L114 112L-1.74846e-07 112L1.74845e-07 116ZM116 114C116 49.9348 64.065 -2.00014 -1.77704e-05 -2.00014L-1.74207e-05 1.99986C61.8559 1.99986 112 52.144 112 114L116 114ZM-2.00002 -0.000138632L-2 114L2 114L1.99998 -0.000138982L-2.00002 -0.000138632Z" fill="#D6DCCC" mask="url(#path-1-inside-1)"/>
 </svg>
