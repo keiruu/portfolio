@@ -28,6 +28,7 @@ export default function MainCard() {
                     bounce: 0.7,
                     duration: 2,
                     }}
+                // eslint-disable-next-line react/no-unescaped-entities
                 >Hi I'm</motion.p>
                 <motion.div className="absolute top-0 right-12 md:right-24"
                     initial={{ rotate: 0}}
