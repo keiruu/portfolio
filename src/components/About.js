@@ -35,7 +35,7 @@ export default function About() {
         if (inView) {
             animationControl.start("appear")
         }
-      }, [inView]);
+      }, [animationControl, inView]);
 
     return (
         <div className="flex md:flex-row flex-col justify-center gap-6">
