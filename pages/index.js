@@ -2,8 +2,10 @@ import Head from 'next/head'
 import MainCard from '../src/components/MainCard'
 import ShapesUp from '../src/components/ShapesUp'
 import ShapesDown from '../src/components/ShapesDown'
+
 import Nav from '../src/components/Nav'
 import About from '../src/components/About'
+import Projects from '../src/components/Projects'
 
 import { motion } from "framer-motion"
 
@@ -23,10 +25,12 @@ export default function Home() {
             <ShapesDown/>
           
 
-          <div className="relative flex flex-col gap-96 w-full h-screen">
+          <div className="relative flex flex-col items-center gap-56 w-full h-screen">
             <MainCard/>
+            <Projects/>
             <About/>
           </div>
+          
       </main>
 
       <footer>

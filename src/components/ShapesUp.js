@@ -12,6 +12,7 @@ const shapes = {
         originX: 0,
         originY: 0,
         rotate: -90,
+        opacity: 0,
         y: 0,
     },
     rotate: { 
@@ -69,19 +70,19 @@ const shapes = {
 export default function Shapes() {
     return (
         <div className="z-0">
-            <motion.div initial="boxInitial" animate="box" variants={shapes} className="fixed top-0 left-0 w-24 md:w-32">
+            <motion.div initial="boxInitial" animate="box" variants={shapes} className="fixed bottom-0 left-0 w-24 md:w-32">
                 <Image src={white} alt=""/>
             </motion.div>
 
-            <motion.div initial="rotateInitial" animate="rotate" variants={shapes} className="fixed top-0 left-24 md:left-30 w-24 md:w-32">
+            <motion.div initial="rotateInitial" animate="rotate" variants={shapes} className="fixed bottom-24 md:bottom-29 left-0 w-24 md:w-32">
                 <Image src={green} alt=""/>
             </motion.div>
 
-            <motion.div initial="rotateInitialTwo" animate="rotateTwo" variants={shapes} className="fixed top-24 md:top-29 -left-0.1 w-24 md:w-32">
+            <motion.div initial="rotateInitialTwo" animate="rotateTwo" variants={shapes} className="fixed bottom-0 left-24 md:left-30 w-24 md:w-32">
                 <Image src={yellow} alt=""/>
             </motion.div>
 
-            <motion.div initial="circleInitial" animate="circle" variants={shapes} className="fixed top-24 md:top-29 left-24 md:left-30 w-24 md:w-32">
+            <motion.div initial="circleInitial" animate="circle" variants={shapes} className="fixed bottom-24 md:bottom-29 left-24 md:left-30 w-24 md:w-32">
                 <Image src={pink} alt=""/>
             </motion.div>
         </div>
