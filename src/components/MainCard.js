@@ -55,7 +55,7 @@ export default function MainCard() {
                       bounce: 0.7,
                       duration: 2,
                     }}
-                >A web developer & UI/UX designer</motion.p>
+                >A web developer and UI/UX designer</motion.p>
                 <motion.div className="flex gap-4 justify-center mt-6"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
