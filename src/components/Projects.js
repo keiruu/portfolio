@@ -19,10 +19,10 @@ const works = [
 
 export default function Projects() {
     return (
-        <div className="relative glass p-10 shadow-none">
+        <div className="relative glass p-4 md:p-10 shadow-none">
             <p className="relative z-10 font-inter text-dark font-semibold text-2xl md:text-3xl">Stuff I <br/> worked on</p>
             
-            <div className="absolute top-22 md:top-24 w-24 md:w-32 left-9 z-0">
+            <div className="absolute top-16 md:top-24 w-24 md:w-32 left-3 md:left-9 z-0">
                 <Image src={line} alt=""/>
             </div>
             
@@ -35,10 +35,10 @@ export default function Projects() {
                             </div>
                             <div className="flex items-center justify-between">
                                 <div>
-                                    <p className="font-bold text-2xl"> {work.name} </p>
-                                    <p className="opacity-80">{work.desc}</p>
+                                    <p className="font-bold text-xl md:text-2xl"> {work.name} </p>
+                                    <p className="opacity-80 md:text-lg text-sm">{work.desc}</p>
                                 </div>
-                                <a href={work.link} target="_blank" rel="noreferrer"><button className="border-2 border-gray p-2 px-4 rounded-lg group-hover:text-white group-hover:bg-gray transition-all text-gray">Visit Site</button></a>
+                                <a href={work.link} target="_blank" rel="noreferrer"><button className="border-2 border-gray p-2 px-4 rounded-lg group-hover:text-white group-hover:bg-gray transition-all text-gray md:text-lg text-sm">Visit Site</button></a>
                             </div>
                         </a>
                     </div>

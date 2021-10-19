@@ -42,15 +42,15 @@ export default function Home() {
             
       </main>
 
-      <footer className=" p-10 px-10 md:px-32 z-10 relative glass shadow-none">
+      <footer className=" p-10 px-2 md:px-32 z-10 relative glass shadow-none">
         <div className="flex justify-between">
-          <p className="text-pink font-bold">2021 © aku.</p>
-          <div className="flex gap-3">
+          <p className="text-pink font-bold md:text-lg text-xs">2021 © aku.</p>
+          <div className="flex gap-3 w-20 md:w-28">
             <a href="https://www.behance.net/abbyunat" target="_blank" rel="noreferrer"><Image src="/behance.svg" alt="" width="30" height="30"/></a>
             <a href="https://www.linkedin.com/in/abbyunat/" target="_blank" rel="noreferrer"><Image src="/linkedin.svg" alt="" width="30" height="30"/></a>
             <a href="https://github.com/keiruu" target="_blank" rel="noreferrer"><Image src="/github.svg" alt="" width="30" height="30"/></a>
           </div>
-          <p className="text-pink font-bold cursor-pointer" onClick={executeScroll}>back to top.</p>
+          <p className="text-pink font-bold cursor-pointer md:text-lg text-xs" onClick={executeScroll}>back to top.</p>
         </div>
       </footer>
     </div>

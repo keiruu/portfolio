@@ -6,10 +6,10 @@ import e2 from '../images/ecclipse2.svg'
 
 export default function Contact() {
     return (
-        <div className="relative glass shadow-none p-20 py-10">
+        <div className="relative glass shadow-none md:p-0 p-10">
             <div className="z-10 relative flex flex-col gap-4">
-                <p className="font-semibold text-4xl">Let&apos;s Talk <span>🤙</span></p>
-                <p className="text-3xl transition-all hover:underline">
+                <p className="font-semibold text-2xl md:text-4xl">Let&apos;s Talk <span>🤙</span></p>
+                <p className="text-xl md:text-3xl transition-all hover:underline">
                     <a href = "mailto: abbyunat@gmail.com">abbyunat@gmail.com</a>
                 </p>
             </div>

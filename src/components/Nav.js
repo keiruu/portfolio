@@ -35,7 +35,7 @@ export default function Nav() {
                       <Image src={logo} alt="AKU Logo" width="50" height="50" />
                     </motion.div>
                   } */}
-                  <p className="text-sm md:text-lg cursor-pointer font-inter relative text-pink mt-3 font-bold transform transition duration-500 ease-in-out hover:-translate-y-1.5">{menu.name}</p>
+                  <p className="text-xs md:text-lg cursor-pointer font-inter relative text-pink mt-3 font-bold transform transition duration-500 ease-in-out hover:-translate-y-1.5">{menu.name}</p>
                 </div>
               ))}
           </motion.div>

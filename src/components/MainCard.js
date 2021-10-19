@@ -8,7 +8,7 @@ export default function MainCard() {
     return (
         <div className="relative flex flex-col items-center justify-center z-10">
             
-            <motion.div className="mt-14 relative glass rounded-3xl p-10 py-20 md:px-32 shadow-none text-center text-pink font-inter"
+            <motion.div className="mt-14 relative glass rounded-3xl p-10 py-20 px-6 md:px-32 shadow-none text-center text-pink font-inter"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
@@ -29,14 +29,14 @@ export default function MainCard() {
                     }}
                 // eslint-disable-next-line react/no-unescaped-entities
                 >Hi I'm</motion.p>
-                <motion.div className="absolute top-24 md:top-30 right-6 md:right-24"
+                <motion.div className="absolute top-24 md:top-30 right-6 md:right-24 w-6 md:w-10"
                     initial={{ rotate: 0}}
                     animate={{ rotate: [0, 30, 0, 35, -10, 0]}}
                     transition={{ delay: 5.5, duration: 2, repeat: Infinity }}
                 >
                     <Image src={star} alt="" width="35" height="35" />
                 </motion.div>
-                <motion.p className="font-extrabold text-7xl md:text-8xl"
+                <motion.p className="font-extrabold text-6xl md:text-8xl"
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{
@@ -46,7 +46,7 @@ export default function MainCard() {
                       duration: 2,
                     }}
                 >ABIGAIL</motion.p>
-                <motion.p className=""
+                <motion.p className="text-sm md:text-lg"
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{
@@ -56,7 +56,7 @@ export default function MainCard() {
                       duration: 2,
                     }}
                 >A web developer and UI/UX designer</motion.p>
-                <motion.div className="flex gap-4 justify-center mt-6"
+                <motion.div className="flex gap-4 justify-center mt-6 md:text-lg text-sm"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
