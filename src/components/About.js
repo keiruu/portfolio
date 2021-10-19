@@ -40,7 +40,7 @@ export default function About() {
     return (
         <div className="flex md:flex-row flex-col justify-center gap-6">
            
-            <motion.div className="flex flex-col gap-6 md:gap-2 md:w-1/2 lg:w-1/3 mx-2 p-10 lg:p-0 md:mx-0 glass shadow-none" >
+            <motion.div className="flex flex-col gap-6 md:gap-2 md:w-1/2 lg:w-1/3 p-10 lg:p-0 md:mx-0 glass shadow-none" >
                 <motion.div variants={container} initial="hidden" ref={ref} animate={animationControl} className="flex flex-col gap-3 relative">
                     <motion.p className="z-10 font-inter text-dark text-2xl md:text-3xl"
                         variants={transition}
