@@ -33,6 +33,18 @@ const transition = {
     }
 }
 
+const transitionTwo = { 
+    hidden: { y: 500, opacity: 0},
+    appear: {
+        y: 0, opacity: 1, 
+        transition: {
+            type: "spring", 
+            bounce: 0.5, 
+            duration: 0.2,
+        }
+    }
+}
+
 const container = {
     hidden: {},
     appear: {
@@ -64,7 +76,7 @@ export default function Projects() {
             
             <motion.div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
                 {works.map((work, index) => (
-                    <motion.div variants={transition} key={index} className="group gap-5 cursor-pointer font-inter text-dark transform transition duration-500 ease-in-out hover:-translate-y-1.5">
+                    <motion.div variants={transitionTwo} key={index} className="group gap-5 cursor-pointer font-inter text-dark transform transition duration-500 ease-in-out">
                         <a href={work.link} target="_blank" rel="noreferrer">
                             <div className="shine">
                                 <Image src={work.img} alt="" width="450" height="350"/>
