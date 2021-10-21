@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import logo from '../images/akulogo.svg'
 
+import { motion } from "framer-motion"
 
-import { motion } from 'framer-motion'
 
 const menus = [
     { name: 'works.'},
@@ -13,6 +13,7 @@ const menus = [
 ]
 
 export default function Nav() {
+
     return (
         <div>
             <motion.div className="relative flex items-center justify-center gap-8 md:gap-14 my-10"

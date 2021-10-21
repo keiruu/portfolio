@@ -9,9 +9,24 @@ import { useInView } from "react-intersection-observer"
 const transition = { 
     hidden: { y: 20, opacity: 0},
     appear: {
-        y: 0, opacity: 1, 
+        y: 1, opacity: 1, 
         transition: {
-            type: "spring", bounce: 0.5, duration: 2,
+            type: "spring", 
+            bounce: 0.5, 
+            duration: 1,
+        }
+    }
+}
+
+const transitionDelayed = { 
+    hidden: { y: 20, opacity: 0},
+    appear: {
+        y: 1, opacity: 1, 
+        transition: {
+            delay:1,
+            type: "spring", 
+            bounce: 0.5, 
+            duration: 1,
         }
     }
 }
@@ -20,10 +35,10 @@ const container = {
     hidden: {},
     appear: {
       transition: {
-        staggerChildren: 0.5, delay: 5
+        staggerChildren: 0.5,
       }
     }
-  }
+}
 
   
 export default function About() {
@@ -61,7 +76,7 @@ export default function About() {
 
                 <motion.ul variants={container} initial="hidden" animate={animationControl} className="font-inter text-dark mt-4">
                     <motion.li
-                        variants={transition}
+                        variants={transitionDelayed}
                     >
                         I’m currently a 3rd year Information Technology student majoring 
                         in Software Technologies at West Visayas State University, 
@@ -69,7 +84,7 @@ export default function About() {
                     </motion.li>
                     <br/>
                     <motion.li 
-                        variants={transition}
+                        variants={transitionDelayed}
                     > 
                         I started coding way back in 2016 and have been casually making 
                         small programs since then. It was only recently that I decided 
@@ -78,7 +93,7 @@ export default function About() {
                     </motion.li>
                     <br/>
                     <motion.li
-                        variants={transition}
+                        variants={transitionDelayed}
                     >
                         I also enjoy learning about UI/UX design and Graphic Design 
                         alongside coding and have been steadily improving my skills in those areas.
